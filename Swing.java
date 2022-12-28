@@ -1,7 +1,6 @@
 
 import java.awt.*;
 import javax.swing.*;
-import javax.swing.text.AttributeSet.ColorAttribute;
 
 public class Swing extends JFrame {
 
@@ -40,18 +39,22 @@ public class Swing extends JFrame {
         nombre.setSize(200, 30);
         nombre.setLocation(145, 20);
         nombre.setFont(new Font("Montserrat", Font.BOLD, 16));
+        nombre.setBackground(Color.white);
+        nombre.setBorder(null);
 
         // Atributos JPasswordField contraseña.
         contraseña.setText("Password");
         contraseña.setSize(200, 30);
         contraseña.setLocation(145, 55);
         contraseña.setFont(new Font("Montserrat", Font.BOLD, 16));
+        contraseña.setBackground(Color.white);
+        contraseña.setBorder(null);
 
         // Atributos JButton submit.
         submit.setText("Submit");
         submit.setSize(100, 30);
         submit.setLocation(196, 90);
         submit.setBackground(Color.lightGray);
-
+        submit.setBorder(null);
     }
 }
